@@ -1,0 +1,247 @@
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url('assets/fonts/Roboto-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('assets/fonts/Roboto-Regular.ttf');
+}
+
+body{
+    background-color: hsl(235, 18%, 26%);
+}
+
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    margin-top: 5.5%;
+    height: 450px;
+    width: 750px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-between;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.card img{
+    height: 420px;
+    margin:15px 15px 20px 0px;
+}
+
+.text{
+    width: 350px;
+    margin-top: 15%;
+    margin-left: 20%;
+}
+
+.heading h1{
+    font-size: 45px;
+    color: hsl(234, 29%, 20%);
+    font-weight: 700;
+    line-height: 0.5;
+    font-family: 'Roboto-Bold';
+}
+
+.heading p{
+    font-size: 16px;
+    color: hsl(235, 18%, 26%);
+}
+
+.check-list{
+    display: flex;
+    margin-top: -20px;
+    color: hsl(235, 18%, 26%);
+}
+
+.check-list img{
+    padding-top: 2px;
+    height: 15px;
+    width: 15px;
+}
+
+.input-section-text{
+    display: flex;
+    justify-content: space-between;
+}
+
+#valid-mail-message{
+    color: hsl(4, 100%, 67%);
+    display: none;
+}
+
+.input-section-text p{
+    color: hsl(234, 29%, 20%);
+    font-size: 16px;
+    line-height: 0.25;
+    font-weight: 600;
+}
+
+.input-section input{
+    width: 280px;
+    height: 25px;
+    border: 1px solid hsl(231, 7%, 60%);
+    outline: none;
+    border-radius: 5px;
+    padding: 5px 0px 5px 7px;
+    font-size: 14px;
+    color: hsl(235, 18%, 26%);
+    font-weight: 100;
+}
+
+.input-section button{
+    width: 285px;
+    height: 35px;
+    margin-top: 10px;
+    padding: 2px 0px 2px 5px;
+    border-radius: 5px;
+    outline: none;
+    background-color: hsl(234, 29%, 20%);
+    color: hsl(0, 0%, 100%);
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.input-section button:hover{
+    background: linear-gradient(135deg, hsl(4, 76%, 74%), hsl(4, 76%, 59%), hsl(4, 93%, 52%));
+
+}
+
+
+
+
+.confirmation-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card2{
+    margin-top: 10.5%;
+    height: 350px;
+    width: 350px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 25px;
+}
+
+.card2 img{
+    margin: 20px 0px 0px 25px;
+    height: 45px;
+    width: 45px;
+}
+
+.card2 h2{
+    font-family: 'Roboto-Bold';
+    font-size: 35px;
+    margin-left: 25px;
+    color: hsl(234, 29%, 20%);
+    font-weight: 700;
+}
+
+.card2 p{
+    font-size: 14px;
+    width: 280px;
+    margin-left: 25px;
+    color: hsl(234, 29%, 20%);
+    font: 300;
+}
+
+#email-text{
+    color: hsl(234, 29%, 20%);
+    font-weight: 700;
+}
+
+
+.dismiss-btn{
+    width: 270px;
+    height: 40px;
+    margin-bottom: 10px;
+    margin-left: 25px;
+    padding: 2px 0px 2px 5px;
+    border-radius: 5px;
+    outline: none;
+    background-color: hsl(234, 29%, 20%);
+    color: hsl(0, 0%, 100%);
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.dismiss-btn:hover {
+    background: linear-gradient(135deg, hsl(4, 76%, 74%), hsl(4, 76%, 59%), hsl(4, 93%, 52%));
+}
+
+
+@media screen and (max-width: 375px){
+    .card{
+        margin-top: 6%;
+        border-radius: 25px;
+        width: 300px;
+        height: 500px;
+    }
+
+    .image img{
+        background-image: url('assets/images/illustration-sign-up-mobile.svg');
+        height: 180px;
+        width: 300px;
+        position: absolute;
+        top: 0px;
+        z-index: 1;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+    }
+
+    .text{
+        position: absolute;
+        top: 150px;
+        left: 0;
+        z-index: 0;
+        width: 300px;
+        margin-left: 15%;
+    }
+
+    .heading h1{
+        font-size: 30px;
+    }
+
+    .heading p{
+        font-size: 13px;
+    }
+
+    .check-list img{
+        height: 12px;
+        width: 12px;
+    }
+
+    .check-list p{
+        padding-top: 3px;
+        font-size: 12px;
+    }
+
+    .input-section-text{
+        width: 250px;
+    }
+
+    .input-section-text p{
+        font-size: 12px;
+    }
+
+    .input-section input{
+        width: 250px;
+        height: 22px;
+        font-size: 12px;
+        color: hsl(235, 18%, 26%);
+    }
+
+    .input-section button{
+        width: 255px;
+        height: 32px;
+        margin-top: 8px;
+        font-size: 12px;
+    }
+}

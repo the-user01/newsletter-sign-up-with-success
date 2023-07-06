@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+</head>
+<body>
+
+  <div class="main" id="main-section">
+
+    <div class="card">
+
+      <div class="text">
+
+        <div class="heading">
+          <h1>Stay Updated!</h1>
+          <p>Join 60,000+ product managers receiving monthly updates on:</p>
+        </div>
+
+        <div>
+
+          <div class="check-list">
+            <div>
+              <img src="assets/images/icon-success.svg" alt="">
+            </div>
+            <div>
+              <p>Product descovery and building what matters</p>
+            </div>
+          </div>
+
+          <div class="check-list">
+            <div>
+              <img src="assets/images/icon-success.svg" alt="">
+            </div>
+            <div>
+              <p>Measuring to ensure updates are a success</p>
+            </div>
+          </div>
+
+          <div class="check-list">
+            <div>
+              <img src="assets/images/icon-success.svg" alt="">
+            </div>
+            <div>
+              <p>And much more!</p>
+            </div>
+          </div>
+
+        </div> <!-- check list div ends here -->
+
+        <div class="input-section">
+          <div class="input-section-text">
+            <div>
+              <p>Email address</p>
+
+            </div>
+
+            <div>
+              <p id="valid-mail-message">Valid email required</p>
+            </div>
+          </div>
+          
+          <input type="email" name="email" id="input-field" placeholder="email@company.com">
+          <button id="btn">Subscribe to monthly newsletter</button>
+        </div>
+
+      </div> <!-- text section div ends here -->
+
+      <div class="image">
+        <img src="assets/images/illustration-sign-up-desktop.svg" alt="">
+      </div> <!-- image div ends here -->
+
+
+
+    </div> <!-- card section ends here -->
+
+
+  </div> <!-- main section ends here -->
+
+
+  <div class="confirmation-section" id="confirmSec">
+    <div class="card2">
+      <div>
+        <img src="assets/images/icon-success.svg" alt="">
+      </div>
+
+      <div>
+        <h2>Thanks for <br> subscribing!</h2>
+        <p>A confirmation email has sent to <span id="email-text"></span>. Please open it and click the button inside to confirm your subscription.</p>
+        <button class="dismiss-btn">Dismiss message</button>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
